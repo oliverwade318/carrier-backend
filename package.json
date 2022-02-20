@@ -3,8 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "start": "npm run prod",
     "server": "babel-node ./bin/www",
-    "dev": "npm-run-all server"
+    "dev": "npm-run-all server",
+    "prod": "npm-run-all clean build server:prod",
+    "build": "babel ./src --out-dir dist"
   },
   "dependencies": {
     "@babel/cli": "^7.13.16",
