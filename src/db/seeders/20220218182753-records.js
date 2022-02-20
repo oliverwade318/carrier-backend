@@ -17,7 +17,7 @@ const records = [
   {name: 'Lemonade', state: 'IN', type: 'fire'},
   {name: 'Lemonade', state: 'MI', type: 'fire'},
 
-  {name: 'National General', state: 'Il', type: 'fire'},
+  {name: 'National General', state: 'IL', type: 'fire'},
   {name: 'National General', state: 'IL', type: 'auto'},
   {name: 'National General', state: 'IN', type: 'fire'},
   {name: 'National General', state: 'IN', type: 'auto'},
