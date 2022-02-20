@@ -3,10 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "npm run prod",
     "server": "babel-node ./bin/www",
-    "dev": "npm-run-all server",
-    "prod": "npm-run-all clean build server:prod",
+    "start": "npm-run-all server",
     "build": "babel ./src --out-dir dist"
   },
   "dependencies": {
