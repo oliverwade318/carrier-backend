@@ -76,15 +76,17 @@ module.exports = {
       }, ['id']);
       const carrierId = await queryInterface.rawSelect('Carriers', {
         where: {
-          name: records?.[i]?.name,
+          name: records?.[i]?.name?.toLowerCase(),
         },
       }, ['id']);
       const insuranceTypeId = await queryInterface.rawSelect('InsuranceTypes', {
         where: {
-          name: records?.[i]?.type,
+          name: records?.[i]?.type.toLowerCase(),
         },
       }, ['id']);
-      updatedRecords.push({stateId, carrierId, insuranceTypeId, createdAt: new Date(), updatedAt: new Date()})
+      if(stateId, carrierId, insuranceTypeId){
+        updatedRecords.push({stateId, carrierId, insuranceTypeId, createdAt: new Date(), updatedAt: new Date()})
+      }
     }
 
     return queryInterface.bulkInsert('Records', [...updatedRecords ]);

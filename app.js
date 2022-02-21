@@ -4,6 +4,8 @@ import cookieParser from 'cookie-parser';
 import logger from 'morgan';
 import cors from 'cors';
 
+import 'app/services/jobs';
+
 import routes from 'routes/index';
 
 const app = express();

@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
   }
   Carrier.init({
     name: {
-      type: DataTypes.STRING,
+      type: DataTypes.CITEXT,
       unique: true,
     }
   }, {

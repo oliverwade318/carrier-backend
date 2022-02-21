@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "server": "babel-node ./bin/www",
+    "dev": "npm-run-all server",
     "start": "npm-run-all server",
     "build": "babel ./src --out-dir dist"
   },
@@ -22,8 +23,10 @@
     "debug": "~2.6.9",
     "dotenv": "^16.0.0",
     "express": "~4.16.1",
+    "google-spreadsheet": "^3.2.0",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
+    "node-cron": "^3.0.0",
     "npm-run-all": "^4.1.5",
     "pg": "^8.7.3",
     "sequelize": "^6.16.1"

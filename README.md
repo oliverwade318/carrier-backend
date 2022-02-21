@@ -40,3 +40,8 @@ npx sequelize-cli db:seed:all
 ```
 npm run dev
 ```
+
+### REFERENCE
+`
+https://theoephraim.github.io/node-google-spreadsheet/#/getting-started/authentication?id=api-key
+`

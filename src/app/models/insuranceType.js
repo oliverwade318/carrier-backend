@@ -16,7 +16,7 @@ module.exports = (sequelize, DataTypes) => {
   }
   InsuranceType.init({
     name: {
-      type: DataTypes.STRING,
+      type: DataTypes.CITEXT,
       unique: true,
     }
   }, {

@@ -14,10 +14,11 @@ const carriers = [
   {name: 'Neptune'},
   {name: 'TypTap'},
 ]
+const lowerCarriers = carriers?.map(carrier => ({name: carrier?.name?.toLowerCase()}));
 
 module.exports = {
   async up (queryInterface, Sequelize) {
-    return queryInterface.bulkInsert('Carriers', [...carriers]);
+    return queryInterface.bulkInsert('Carriers', [...lowerCarriers]);
   },
 
   async down (queryInterface, Sequelize) {
